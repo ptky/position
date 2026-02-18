@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+main {
+    max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    background-color: bisque;
+    padding: 10px;
+}
+nav {
+    background-color: rgb(231, 97, 97);
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    list-style-type: none;
+    gap: 3px;
+    padding: 0;
+}
+
+nav ul li{
+    background-color: blueviolet;
+    text-align: center;
+    padding: 5px 10px;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: indianred;
+}
+
+header {
+    padding: 50px 0 0 0;
+}
+/* position */
+
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+#elso {
+    border: 1px solid black;
+    padding: 10px;
+    position: relative; /* amihez kepest akarom rakni absolutetal elhelyezni arra kell rairni a relative-ot */
+}
+#elso span {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    
+}
+
+img {
+    width: 100%;
+    padding-top: 10px;
+}
+
+#akcio {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    border: 2px solid black;
+    width: 200px;
+    padding: 10px;  
+}
+
+#akcioszoveg p {
+    text-transform: uppercase;
+    color: white;
+    background-color: blue;
+    padding: 2px 4px;
+    position: absolute;
+    right: 4px;
+    bottom: 225px;
+    border-radius: 20px;
+}
+
+#gomb {
+    position: relative;
+    
+}
+
+#gomb:hover {
+    bottom: 200px;
+}
+
